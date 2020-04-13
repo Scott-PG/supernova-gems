@@ -1,3 +1,6 @@
+![P3 Challenge](https://i.imgur.com/uamXZnp.png)
+<p style="text-align: center;"><em>P3 Challenge</em></p>
+
 # supernova-gems
 
 ## Table of Contents
