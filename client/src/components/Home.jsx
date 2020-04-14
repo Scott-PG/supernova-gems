@@ -1,14 +1,17 @@
-import React from 'react'
-import './Home.css'
-import Layout from './shared/Layout'
+import React from "react";
+import "./Home.css";
+import Layout from "./shared/Layout";
+import Products from "./Products";
 
 const Home = (props) => {
   return (
     <Layout user={props.user}>
-      <div className="home">
-      </div>
+      {/* <div className="home"> */}
+      <img src="https://i.imgur.com/AKdJFKV.jpg" width="100%" />
+      <Products />
+      {/* </div> */}
     </Layout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
