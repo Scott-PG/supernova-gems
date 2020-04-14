@@ -1,31 +1,34 @@
 const db = require("../db");
 const Product = require("../models/product");
+const faker = require("faker");
+let fs = require("fs");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 const main = async () => {
-  const products = [
-    {
-      name: "Product 001",
-      imgURL:
-        "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      price: "130",
-      jType: "ring",
-      jCollection: "men",
-    },
-    {
-      name: "Product 002",
-      imgURL:
-        "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      price: "150",
-      jType: "ring",
-      jCollection: "women",
-    },
-  ];
+  let products = [];
+
+  let fs = require("fs");
+  text = fs.readFileSync("./P3Seed.csv").toString("utf-8");
+  let textByLine = text.split("\n");
+
+  textByLine.map((line) => {
+    if (line) {
+      let fields = line.split(",");
+
+      const prod = {
+        name: fields[0] ? fields[0] : faker.lorem.words(),
+        imgURL: fields[1] ? fields[1] : "https://example.com",
+        description: fields[2] ? fields[2] : faker.lorem.sentence(),
+        price: fields[3] ? fields[3] : faker.commerce.price(),
+        jType: fields[4] ? fields[4] : "ring",
+        jCollection: fields[5] ? fields[5] : "women",
+      };
+
+      console.log(prod);
+      products.push(prod);
+    }
+  });
 
   await Product.insertMany(products);
   console.log("Created products!");
