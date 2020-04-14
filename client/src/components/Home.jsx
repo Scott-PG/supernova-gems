@@ -8,7 +8,7 @@ const Home = (props) => {
     <Layout user={props.user}>
       {/* <div className="home"> */}
       <img src="https://i.imgur.com/AKdJFKV.jpg" width="100%" />
-      <Products />
+      <Products jCollection="women" />
       {/* </div> */}
     </Layout>
   );
