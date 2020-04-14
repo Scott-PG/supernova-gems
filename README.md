@@ -65,6 +65,13 @@ Created, designed, and developed by [Kay Chan](https://github.com/kaych26), [Sco
 ## Sitemap
 
 ## Wireframes
+![Main Page](Final%20Wireframes/Main%20Page%20–%20MVP.png)
+![Walkthrough 1](Final%20Wireframes/Walkthrough%201.png)
+![Walkthrough 2](Final%20Wireframes/Walkthrough%202.png)
+![Walkthrough 3](Final%20Wireframes/Walkthrough%203.png)
+![Engagement](Final%20Wireframes/Engagement%20Page.png)
+![Women's](Final%20Wireframes/Women’s%20Page.png)
+![Men's](Final%20Wireframes/Mens.png)
 
 #### Desktop 
 
