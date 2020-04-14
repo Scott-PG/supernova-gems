@@ -13,8 +13,8 @@ class ProductEdit extends Component {
         description: "",
         imgURL: "",
         price: "",
-        jType: "ring",
-        jCollection: "men",
+        jType: "",
+        jCollection: "",
       },
       updated: false,
     };
@@ -98,6 +98,26 @@ class ProductEdit extends Component {
               required
               onChange={this.handleChange}
             />
+            <select
+              className="jtype-dropdown"
+              name="jType"
+              required
+              onChange={this.handleChange}
+            >
+              <option value="ring">Ring</option>
+              <option value="necklace">Necklace</option>
+              <option value="earrings">Earrings</option>
+            </select>
+            <select
+              className="jcollection-dropdown"
+              name="jCollection"
+              required
+              onChange={this.handleChange}
+            >
+              <option value="men">Men</option>
+              <option value="women">Women</option>
+              <option value="engagement">Engagement</option>
+            </select>
             <button type="submit" className="save-button">
               Save
             </button>
