@@ -7,8 +7,8 @@ const Product = new Schema(
     imgURL: { type: String, required: true },
     description: { type: String, required: true },
     price: { type: String, required: true },
-    jType: { type: String, required: false },
-    jCollection: { type: String, required: false },
+    jType: { type: String, required: true },
+    jCollection: { type: String, required: true },
   },
   { timestamps: true }
 );
