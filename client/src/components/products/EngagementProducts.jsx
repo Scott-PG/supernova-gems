@@ -6,7 +6,7 @@ import Products from "../Products";
 const EngagementProducts = (props) => {
   return (
     <Layout user={props.user}>
-      <img src="https://i.imgur.com/AKdJFKV.jpg" width="100%" />
+      <img src="https://i.imgur.com/3ISP0Nr.jpg" width="100%" />
       <Products jCollection="engagement" user={props.user} />
     </Layout>
   );
