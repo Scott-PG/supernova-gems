@@ -15,6 +15,7 @@ class ProductCreate extends Component {
         price: "",
         jType: "",
         jCollection: "",
+        featured: false,
       },
       created: false,
     };
@@ -30,6 +31,17 @@ class ProductCreate extends Component {
     });
   };
 
+  handleFeaturedChange = (event) => {
+    const value = event.target.value;
+    let pulledState = { ...this.state };
+    if (value == "true") {
+      pulledState.product.featured = true;
+    } else if (value == "false") {
+      pulledState.product.featured = false;
+    }
+    this.setState({ product: pulledState.product });
+  };
+
   handleSubmit = async (event) => {
     event.preventDefault();
     const created = await createProduct(this.state.product);
@@ -40,7 +52,7 @@ class ProductCreate extends Component {
     const { product, created } = this.state;
 
     if (created) {
-      return <Redirect to={`/products`} />;
+      return <Redirect to={`/${this.state.product.jCollection}`} />;
     }
     return (
       <Layout user={this.props.user}>
@@ -71,26 +83,6 @@ class ProductCreate extends Component {
             required
             onChange={this.handleChange}
           />
-          <select
-            className="jtype-dropdown"
-            name="jType"
-            required
-            onChange={this.handleChange}
-          >
-            <option value="ring">Ring</option>
-            <option value="necklace">Necklace</option>
-            <option value="earrings">Earrings</option>
-          </select>
-          <select
-            className="jcollection-dropdown"
-            name="jCollection"
-            required
-            onChange={this.handleChange}
-          >
-            <option value="men">Men</option>
-            <option value="women">Women</option>
-            <option value="engagement">Engagement</option>
-          </select>
           <input
             className="input-image-link"
             placeholder="Image Link"
@@ -99,6 +91,46 @@ class ProductCreate extends Component {
             required
             onChange={this.handleChange}
           />
+          <select
+            className="jtype-dropdown"
+            name="jType"
+            required
+            onChange={this.handleChange}
+            defaultValue=""
+          >
+            <option value="" disabled>
+              Type
+            </option>
+            <option value="ring">Ring</option>
+            <option value="necklace">Necklace</option>
+            <option value="earrings">Earrings</option>
+            <option value="cufflinks">Cufflinks</option>
+            <option value="bracelet">Bracelet</option>
+          </select>
+          <select
+            className="jcollection-dropdown"
+            name="jCollection"
+            required
+            onChange={this.handleChange}
+            defaultValue=""
+          >
+            <option value="" disabled>
+              Collection
+            </option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+            <option value="engagement">Engagement</option>
+          </select>
+          <select
+            className="featured-dropdown"
+            name="featured"
+            required
+            onChange={this.handleFeaturedChange}
+            defaultValue="false"
+          >
+            <option value="false">Not Featured</option>
+            <option value="true">Featured</option>
+          </select>
           <button type="submit" className="submit-button">
             Submit
           </button>

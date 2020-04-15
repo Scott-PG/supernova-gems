@@ -15,6 +15,7 @@ class ProductEdit extends Component {
         price: "",
         jType: "",
         jCollection: "",
+        featured: false,
       },
       updated: false,
     };
@@ -34,6 +35,17 @@ class ProductEdit extends Component {
         [name]: value,
       },
     });
+  };
+
+  handleFeaturedChange = (event) => {
+    const value = event.target.value;
+    let pulledState = { ...this.state };
+    if (value == "true") {
+      pulledState.product.featured = true;
+    } else if (value == "false") {
+      pulledState.product.featured = false;
+    }
+    this.setState({ product: pulledState.product });
   };
 
   handleSubmit = async (event) => {
@@ -103,20 +115,40 @@ class ProductEdit extends Component {
               name="jType"
               required
               onChange={this.handleChange}
+              value={this.state.product.jType}
             >
+              <option value="" disabled>
+                Type
+              </option>
               <option value="ring">Ring</option>
               <option value="necklace">Necklace</option>
               <option value="earrings">Earrings</option>
+              <option value="cufflinks">Cufflinks</option>
+              <option value="bracelet">Bracelet</option>
             </select>
             <select
               className="jcollection-dropdown"
               name="jCollection"
               required
               onChange={this.handleChange}
+              value={this.state.product.jCollection}
             >
+              <option value="" disabled>
+                Collection
+              </option>
               <option value="men">Men</option>
               <option value="women">Women</option>
               <option value="engagement">Engagement</option>
+            </select>
+            <select
+              className="featured-dropdown"
+              name="featured"
+              required
+              onChange={this.handleFeaturedChange}
+              value={this.state.product.featured ? "true" : "false"}
+            >
+              <option value="false">Not Featured</option>
+              <option value="true">Featured</option>
             </select>
             <button type="submit" className="save-button">
               Save

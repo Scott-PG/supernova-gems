@@ -11,7 +11,6 @@ const EngagementProducts = (props) => {
         heroImg="https://i.imgur.com/3ISP0Nr.jpg"
         heroTitle="Engagement"
       />
-
       <Products jCollection="engagement" user={props.user} />
     </Layout>
   );
