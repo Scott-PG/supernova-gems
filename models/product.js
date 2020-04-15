@@ -9,6 +9,7 @@ const Product = new Schema(
     price: { type: String, required: true },
     jType: { type: String, required: true },
     jCollection: { type: String, required: true },
+    featured: {type: Boolean, default: false}
   },
   { timestamps: true }
 );
