@@ -52,7 +52,7 @@ class ProductCreate extends Component {
     const { product, created } = this.state;
 
     if (created) {
-      return <Redirect to={`/`} />;
+      return <Redirect to={`/${this.state.product.jCollection}`} />;
     }
     return (
       <Layout user={this.props.user}>

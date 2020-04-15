@@ -3,7 +3,6 @@ import "./ProductDetail.css";
 import Layout from "./shared/Layout";
 import { getProduct, deleteProduct } from "../services/product";
 import { Link, Redirect } from "react-router-dom";
-import { set } from "mongoose";
 
 class ProductDetail extends Component {
   constructor(props) {
