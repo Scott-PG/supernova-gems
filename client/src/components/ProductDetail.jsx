@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./ProductDetail.css";
 import Layout from "./shared/Layout";
 import { getProduct, deleteProduct } from "../services/product";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 class ProductDetail extends Component {
   constructor(props) {
@@ -15,6 +15,7 @@ class ProductDetail extends Component {
         jType: "",
         jCollection: "",
       },
+      deleted: false,
     };
   }
 
@@ -25,7 +26,10 @@ class ProductDetail extends Component {
   }
 
   render() {
-    const { product } = this.state;
+    const { product, deleted } = this.state;
+    if (deleted) {
+      return <Redirect to={`/${this.state.product.jCollection}`} />;
+    }
     return (
       <Layout user={this.props.user}>
         <div className="product-detail">
@@ -52,7 +56,10 @@ class ProductDetail extends Component {
               </button>
               <button
                 className="delete-button"
-                onClick={() => deleteProduct(product._id)}
+                onClick={() => {
+                  deleteProduct(product._id);
+                  this.setState({ deleted: true });
+                }}
               >
                 Delete
               </button>

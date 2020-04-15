@@ -115,8 +115,9 @@ class ProductEdit extends Component {
               name="jType"
               required
               onChange={this.handleChange}
+              value={this.state.product.jType}
             >
-              <option value="" disabled defaultValue>
+              <option value="" disabled>
                 Type
               </option>
               <option value="ring">Ring</option>
@@ -130,8 +131,9 @@ class ProductEdit extends Component {
               name="jCollection"
               required
               onChange={this.handleChange}
+              value={this.state.product.jCollection}
             >
-              <option value="" disabled defaultValue>
+              <option value="" disabled>
                 Collection
               </option>
               <option value="men">Men</option>
@@ -143,10 +145,9 @@ class ProductEdit extends Component {
               name="featured"
               required
               onChange={this.handleFeaturedChange}
+              value={this.state.product.featured ? "true" : "false"}
             >
-              <option defaultValue value="false">
-                Not Featured
-              </option>
+              <option value="false">Not Featured</option>
               <option value="true">Featured</option>
             </select>
             <button type="submit" className="save-button">
