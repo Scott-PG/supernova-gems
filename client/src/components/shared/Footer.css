@@ -1,11 +1,27 @@
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 20px;
+  padding: 40px;
 }
 
-footer a {
-    text-decoration: underline;
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  font-family: brandon-grotesque, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+}
+
+.footer a {
+  /* margin-top: 20px; */
+  color: white;
+  padding: 15px;
+}
+
+.footer img {
+  padding: 15px;
 }
