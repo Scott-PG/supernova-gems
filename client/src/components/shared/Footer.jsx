@@ -6,16 +6,16 @@ import Facebooklogo from "../../Images/Facebooklogo.png";
 
 const Footer = () => (
   <footer className="footer">
-    <div classname="privacy">Privacy</div>
+    <div className="privacy">Privacy</div>
 
-    <div classname="footerlinks">
+    <div className="footerlinks">
       <a href="#">Shop</a>
       <a href="#">Blog</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </div>
 
-    <div classname="footerImglinks">
+    <div className="footerImglinks">
       <img src={IGlogo} alt="IG-Logo" />
       <img src={Twitterlogo} alt="Twitter-Logo" />
       <img src={Facebooklogo} alt="Facebook-Logo" />
