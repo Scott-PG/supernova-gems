@@ -14,6 +14,7 @@ class Products extends Component {
       filterValue: "",
       filteredProducts: null,
       selectValue: "Featured",
+      featured: false,
     };
   }
 
@@ -22,6 +23,14 @@ class Products extends Component {
     products = products.filter((element) => {
       return element.jCollection === this.props.jCollection;
     });
+    if (this.props.featured != undefined) {
+      this.setState({ featured: this.props.featured });
+      if (this.state.featured === true) {
+        products = products.filter((element) => {
+          return element.featured === true;
+        });
+      }
+    }
     this.setState({ products });
   }
 
@@ -82,36 +91,43 @@ class Products extends Component {
         key={index}
       />
     ));
+    let searchArea = "";
+    if (this.state.featured === false) {
+      searchArea = (
+        <>
+          <Search
+            onSubmit={this.handleSubmit}
+            value={this.state.filterValue}
+            onChange={this.handleSearchChange}
+          />
+          <form className="sort-container" onSubmit={this.handleSubmit}>
+            <label htmlFor="sort">SORT BY:</label>
+            <select
+              className="sort"
+              value={this.state.selectValue}
+              onChange={this.handleSortChange}
+            >
+              <option className="option" value="name-ascending">
+                &nbsp; Alphabetically, A-Z &nbsp;
+              </option>
+              <option value="name-descending">
+                &nbsp; Alphabetically, Z-A &nbsp;
+              </option>
+              <option value="price-ascending">
+                &nbsp; Price, low to high &nbsp;
+              </option>
+              <option value="price-descending">
+                &nbsp; Price, high to low &nbsp;
+              </option>
+            </select>
+          </form>
+        </>
+      );
+    }
 
     return (
-      // <Layout user={this.props.user}>
       <>
-        <Search
-          onSubmit={this.handleSubmit}
-          value={this.state.filterValue}
-          onChange={this.handleSearchChange}
-        />
-        <form className="sort-container" onSubmit={this.handleSubmit}>
-          <label htmlFor="sort">SORT BY:</label>
-          <select
-            className="sort"
-            value={this.state.selectValue}
-            onChange={this.handleSortChange}
-          >
-            <option className="option" value="name-ascending">
-              &nbsp; Alphabetically, A-Z &nbsp;
-            </option>
-            <option value="name-descending">
-              &nbsp; Alphabetically, Z-A &nbsp;
-            </option>
-            <option value="price-ascending">
-              &nbsp; Price, low to high &nbsp;
-            </option>
-            <option value="price-descending">
-              &nbsp; Price, high to low &nbsp;
-            </option>
-          </select>
-        </form>
+        {searchArea}
         <div className="products">{PRODUCTS}</div>
       </>
       // </Layout>
