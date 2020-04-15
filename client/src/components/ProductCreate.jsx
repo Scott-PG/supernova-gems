@@ -52,7 +52,7 @@ class ProductCreate extends Component {
     const { product, created } = this.state;
 
     if (created) {
-      return <Redirect to={`/products`} />;
+      return <Redirect to={`/`} />;
     }
     return (
       <Layout user={this.props.user}>
@@ -96,8 +96,9 @@ class ProductCreate extends Component {
             name="jType"
             required
             onChange={this.handleChange}
+            defaultValue=""
           >
-            <option value="" disabled defaultValue>
+            <option value="" disabled>
               Type
             </option>
             <option value="ring">Ring</option>
@@ -111,8 +112,9 @@ class ProductCreate extends Component {
             name="jCollection"
             required
             onChange={this.handleChange}
+            defaultValue=""
           >
-            <option value="" disabled defaultValue>
+            <option value="" disabled>
               Collection
             </option>
             <option value="men">Men</option>
@@ -124,10 +126,9 @@ class ProductCreate extends Component {
             name="featured"
             required
             onChange={this.handleFeaturedChange}
+            defaultValue="false"
           >
-            <option defaultValue value="false">
-              Not Featured
-            </option>
+            <option value="false">Not Featured</option>
             <option value="true">Featured</option>
           </select>
           <button type="submit" className="submit-button">
