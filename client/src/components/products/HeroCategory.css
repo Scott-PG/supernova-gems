@@ -1,0 +1,30 @@
+.leftTitlePositionC {
+  font-size: larger;
+}
+
+.heroImgC {
+  max-width: 100%;
+  display: block;
+}
+
+.heroBlockC {
+  position: relative;
+  background-color: white;
+  width: 665px;
+  height: 250px;
+  top: -850px;
+  right: -820px;
+  text-align: center;
+}
+.heroTitleC {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-family: kazimir, sans-serif;
+  font-size: 48px;
+  padding: 60px 120px;
+
+  width: 380px;
+  border: #36413e solid 1px;
+  outline: solid 1px #36413e;
+}

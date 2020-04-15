@@ -36,6 +36,9 @@ const alwaysOptions = (
     <NavLink className="link" to="/men">
       Men
     </NavLink>
+    <NavLink className="link" to="/lemaison">
+      Le Maison
+    </NavLink>
   </>
 );
 

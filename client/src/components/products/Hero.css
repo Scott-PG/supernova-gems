@@ -1,0 +1,49 @@
+.leftTitlePosition {
+  font-size: larger;
+}
+
+.heroImg {
+  max-width: 100%;
+  display: block;
+}
+
+.heroBlock {
+  position: relative;
+  background-color: white;
+  width: 600px;
+  height: 250px;
+  top: -480px;
+  left: 70px;
+}
+.heroTitle {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  font-family: kazimir, sans-serif;
+  font-size: 48px;
+}
+
+.heroTitle2 {
+  position: absolute;
+  top: 140px;
+  left: 155px;
+  font-family: kazimir, sans-serif;
+  font-size: 24px;
+}
+
+.heroSectionUnderline {
+  outline: solid 0.5px #36413e;
+  position: absolute;
+  top: 125px;
+  width: 420px;
+  left: 90px;
+}
+
+.heroOutline {
+  border: #36413e solid 1px;
+  width: 560px;
+  height: 200px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
