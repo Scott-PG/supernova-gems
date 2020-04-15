@@ -2,11 +2,15 @@ import React from "react";
 // import "./MensProducts.css";
 import Layout from "../shared/Layout";
 import Products from "../Products";
+import HeroCategory from "./HeroCategory";
 
 const MensProducts = (props) => {
   return (
     <Layout user={props.user}>
-      <img src="https://i.imgur.com/AKdJFKV.jpg" width="100%" />
+      <HeroCategory
+        heroImg="https://i.imgur.com/8sRhFF5.jpg"
+        heroTitle="Mens Collection"
+      />
       <Products jCollection="men" user={props.user} />
     </Layout>
   );
