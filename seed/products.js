@@ -10,318 +10,352 @@ const main = async () => {
     {
       name: 'Out-Of-This-World Heart',
       imgURL: 'https://i.imgur.com/e8x3pMI.jpg',
-      description: 'Facere libero expedita illum.',
-      price: '765.00',
+      description: 'Facere aliquam ut necessitatibus et necessitatibus ducimus beatae accusamus aut.',
+      price: '695.00',
       jType: 'necklace',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Shooting Star',
       imgURL: 'https://i.imgur.com/EDQGcUQ.jpg',
-      description: 'Reiciendis omnis sit vero id quasi praesentium animi.',
-      price: '973.00',
+      description: 'Molestias dignissimos eum ut in labore consequatur.',
+      price: '275.00',
       jType: 'necklace',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Elemental Rose',
       imgURL: 'https://i.imgur.com/7dzvwge.jpg',
-      description: 'Facilis fugiat incidunt porro quia in voluptatum cum.',
-      price: '595.00',
+      description: 'Sunt eligendi iste.',
+      price: '331.00',
       jType: 'necklace',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Total Recall',
       imgURL: 'https://i.imgur.com/isYU2CA.jpg',
-      description: 'Consectetur est qui non sit doloremque.',
-      price: '391.00',
+      description: 'Aut dolorum tenetur cum consequatur ab numquam tempore.',
+      price: '581.00',
       jType: 'earrings',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Interstellar Sparkle',
       imgURL: 'https://i.imgur.com/16QJsA8.jpg',
-      description: 'Et dolores qui tempora amet.',
-      price: '245.00',
+      description: 'Occaecati fugiat maxime magnam rerum laborum ab molestiae delectus.',
+      price: '682.00',
       jType: 'necklace',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Deimos Fury',
       imgURL: 'https://i.imgur.com/xeIQPve.jpg',
-      description: 'Fugiat maxime nisi repellat.',
-      price: '821.00',
+      description: 'Enim accusantium ex.',
+      price: '554.00',
       jType: 'necklace',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Shooting Star',
       imgURL: 'https://i.imgur.com/raborD0.jpg',
-      description: 'Et fugiat ducimus.',
-      price: '59.00',
+      description: 'Numquam est eum sunt eius.',
+      price: '306.00',
       jType: 'earrings',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Celestial Light',
       imgURL: 'https://i.imgur.com/bxgUjN7.jpg',
-      description: 'A soluta cum.',
-      price: '586.00',
+      description: 'Ex impedit enim culpa velit.',
+      price: '318.00',
       jType: 'earrings',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Zathura',
       imgURL: 'https://i.imgur.com/LVt27mz.jpg',
-      description: 'Ut qui dolorum maxime eos consequatur perferendis incidunt.',
-      price: '303.00',
+      description: 'Tempora delectus officiis quia quisquam.',
+      price: '726.00',
       jType: 'bracelet',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Space Jam',
       imgURL: 'https://i.imgur.com/BzutjV4.jpg',
-      description: 'Dolor praesentium cumque.',
-      price: '675.00',
+      description: 'Reprehenderit quia modi voluptas modi non omnis consequatur delectus.',
+      price: '362.00',
       jType: 'cufflinks',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
     ,
     {
       name: 'Sol Ascending',
       imgURL: 'https://i.imgur.com/hmqsgAc.jpg',
-      description: 'Accusamus cupiditate necessitatibus dolor voluptatem ut nemo.',
-      price: '183.00',
+      description: 'Debitis perferendis nemo excepturi delectus est recusandae aut quaerat.',
+      price: '67.00',
       jType: 'necklace',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Shooting Star',
       imgURL: 'https://i.imgur.com/b8ZKoFb.jpg',
-      description: 'Quam et iste libero dolor soluta rerum.',
-      price: '281.00',
+      description: 'Voluptatum odio nam quos nulla quos recusandae temporibus voluptatem.',
+      price: '602.00',
       jType: 'bracelet',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Space Adventure',
       imgURL: 'https://i.imgur.com/jXK0ul5.jpg',
-      description: 'Nulla sed officiis error similique.',
-      price: '216.00',
+      description: 'Quis neque facilis rerum molestiae nulla qui repellendus.',
+      price: '944.00',
       jType: 'earrings',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Gattaca',
       imgURL: 'https://i.imgur.com/dqTmzdZ.png',
-      description: 'Rerum sit sunt error optio aut perferendis maiores recusandae tempora.',
-      price: '230.00',
+      description: 'Qui aut numquam incidunt consequuntur.',
+      price: '890.00',
       jType: 'cufflinks',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
     ,
     {
       name: 'Neptune Accent',
       imgURL: 'https://i.imgur.com/TYISVuh.jpg',
-      description: 'Voluptatibus molestiae consequatur magnam deserunt et sapiente.',
-      price: '223.00',
+      description: 'Cumque corrupti provident.',
+      price: '39.00',
       jType: 'earrings',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Sunflare',
       imgURL: 'https://i.imgur.com/UcECphU.jpg',
-      description: 'Id quia officiis modi modi suscipit vitae neque.',
-      price: '644.00',
+      description: 'Animi eos nihil incidunt vero saepe ullam quo.',
+      price: '449.00',
       jType: 'earrings',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Polaris Rose',
       imgURL: 'https://i.imgur.com/61bXd8n.jpg',
-      description: 'Sit quis eos ut porro aperiam totam incidunt velit illo.',
-      price: '6.00',
+      description: 'Id quo modi illo explicabo voluptatem praesentium quia quia.',
+      price: '194.00',
       jType: 'necklace',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Celestial Cluster',
       imgURL: 'https://i.imgur.com/LoiCvUi.jpg',
-      description: 'Suscipit necessitatibus voluptas.',
-      price: '109.00',
+      description: 'Nihil id architecto magnam.',
+      price: '611.00',
       jType: 'necklace',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Space Bling',
       imgURL: 'https://i.imgur.com/3nbi8aR.jpg',
-      description: 'Neque aperiam dolorem nihil magnam aut provident nostrum.',
-      price: '912.00',
+      description: 'Nam temporibus excepturi qui.',
+      price: '892.00',
       jType: 'cufflinks',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
     ,
     {
       name: 'Laika Dog Tag',
       imgURL: 'https://i.imgur.com/J9cbKVQ.jpg',
-      description: 'Necessitatibus porro veniam perferendis dolor eaque aut eveniet.',
-      price: '95.00',
+      description: 'Ipsa eveniet est.',
+      price: '705.00',
       jType: 'pendant',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
     ,
     {
       name: 'Galaxy Knots',
       imgURL: 'https://i.imgur.com/uooF06y.jpg',
-      description: 'Libero voluptate quasi ipsa fugit id pariatur facere.',
-      price: '203.00',
+      description: 'Beatae delectus facere odio recusandae.',
+      price: '619.00',
       jType: 'bracelet',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
     ,
     {
       name: 'The Force Awakens',
       imgURL: 'https://i.imgur.com/G81kifT.jpg',
-      description: 'Expedita tenetur ex earum qui omnis dolorum aut quod.',
-      price: '571.00',
+      description: 'Quia eligendi rerum non est.',
+      price: '570.00',
       jType: 'ring',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
     ,
     {
       name: 'Intergalactic Rose',
       imgURL: 'https://i.imgur.com/xcOWNYc.jpg',
-      description: 'Porro minus tempora illum accusantium itaque.',
-      price: '841.00',
+      description: 'Voluptate sint rerum voluptatem rerum assumenda dolor et.',
+      price: '943.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Shooting Star',
       imgURL: 'https://i.imgur.com/qnCscUY.jpg',
-      description: 'Incidunt accusantium non sit dolorum.',
-      price: '576.00',
+      description: 'Veritatis error ipsa expedita.',
+      price: '746.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Classy Martian',
       imgURL: 'https://i.imgur.com/mGlIFMa.jpg',
-      description: 'Ipsam commodi non enim molestiae consequatur officia.',
-      price: '711.00',
+      description: 'Possimus aut omnis.',
+      price: '617.00',
       jType: 'ring',
-      jCollection: 'women'
+      jCollection: 'women',
+      featured: false
     }
     ,
     {
       name: 'Armageddon',
       imgURL: 'https://i.imgur.com/IUxr4OV.jpg',
-      description: 'Quia eos eos.',
-      price: '817.00',
+      description: 'Ea natus corporis.',
+      price: '938.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Eternal Love',
       imgURL: 'https://i.imgur.com/54bPuBi.jpg',
-      description: 'Fuga voluptatem mollitia quaerat cum.',
-      price: '578.00',
+      description: 'Temporibus mollitia tempora adipisci voluptas ex id recusandae nulla.',
+      price: '168.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Supernova Heart',
       imgURL: 'https://i.imgur.com/omPy2Mg.jpg',
-      description: 'Odit eligendi ipsum itaque consequatur illum iure consequatur.',
-      price: '908.00',
+      description: 'Aut animi illum rerum temporibus.',
+      price: '511.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Neptune Accent',
       imgURL: 'https://i.imgur.com/r9PM5FW.jpg',
-      description: 'Porro ipsa rerum.',
-      price: '629.00',
+      description: 'Omnis fuga repudiandae et qui eum consequuntur sint error.',
+      price: '182.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Luna',
       imgURL: 'https://i.imgur.com/AaQQV07.jpg',
-      description: 'Fugit neque dolor ut tempora eum nemo blanditiis architecto.',
-      price: '346.00',
+      description: 'Incidunt magnam quam et provident rerum.',
+      price: '830.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Venusian Mist',
       imgURL: 'https://i.imgur.com/Wi7vpBY.jpg',
-      description: 'Illum aut eligendi minima voluptas.',
-      price: '312.00',
+      description: 'Quis ad dignissimos excepturi iusto ut vel ipsum odit iusto.',
+      price: '129.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Sol Ascending',
       imgURL: 'https://i.imgur.com/Wj7w6ED.jpg',
-      description: 'Quisquam qui et dolores sed.',
-      price: '66.00',
+      description: 'Ut quod minus ea libero.',
+      price: '473.00',
       jType: 'ring',
-      jCollection: 'engagement'
+      jCollection: 'engagement',
+      featured: false
     }
     ,
     {
       name: 'Borg Cube',
       imgURL: 'https://i.imgur.com/fjUI62x.jpg',
-      description: 'Enim doloribus in.',
-      price: '902.00',
+      description: 'Ut saepe voluptates dolorem.',
+      price: '979.00',
       jType: 'cufflinks',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
     ,
     {
       name: 'Manacles of Heaven',
       imgURL: 'https://i.imgur.com/fcKqf8F.jpg',
-      description: 'Et modi sed impedit dolore.',
-      price: '536.00',
+      description: 'Suscipit rerum aliquid sit rem similique.',
+      price: '600.00',
       jType: 'bracelet',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
     ,
     {
       name: 'Space Odyssey',
       imgURL: 'https://i.imgur.com/1rPI6HD.jpg',
-      description: 'Laborum similique ex fugiat rerum dolorem veniam.',
-      price: '267.00',
+      description: 'Fugit voluptatem rerum occaecati asperiores.',
+      price: '398.00',
       jType: 'ring',
-      jCollection: 'men'
+      jCollection: 'men',
+      featured: false
     }
-
   ]
 
   await Product.insertMany(products);
