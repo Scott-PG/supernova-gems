@@ -1,7 +1,26 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
+import IGlogo from "../../Images/instagramWhite.png";
+import Twitterlogo from "../../Images/Twitterlogo.png";
+import Facebooklogo from "../../Images/Facebooklogo.png";
 
-const Footer = () =>
-    <footer></footer>
+const Footer = () => (
+  <footer className="footer">
+    <div classname="privacy">Privacy</div>
 
-export default Footer
+    <div classname="footerlinks">
+      <a href="#">Shop</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div classname="footerImglinks">
+      <img src={IGlogo} alt="IG-Logo" />
+      <img src={Twitterlogo} alt="Twitter-Logo" />
+      <img src={Facebooklogo} alt="Facebook-Logo" />
+    </div>
+  </footer>
+);
+
+export default Footer;
