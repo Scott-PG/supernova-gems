@@ -39,7 +39,7 @@ nav {
 
 .links {
   flex: 2;
-  /* max-width: 60vw; */
+  max-width: 100%;
   align-items: center;
   font-size: 14px;
   display: flex;
@@ -51,6 +51,7 @@ nav {
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 .welcome {

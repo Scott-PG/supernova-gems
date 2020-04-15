@@ -358,6 +358,7 @@ const main = async () => {
     }
   ]
 
+  await Product.deleteMany();
   await Product.insertMany(products);
   console.log("Created products!");
 };
