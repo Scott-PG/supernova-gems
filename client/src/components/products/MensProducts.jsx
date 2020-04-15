@@ -6,7 +6,7 @@ import Products from "../Products";
 const MensProducts = (props) => {
   return (
     <Layout user={props.user}>
-      <img src="https://i.imgur.com/AKdJFKV.jpg" width="100%" />
+      <img src="https://i.imgur.com/8sRhFF5.jpg" width="100%" />
       <Products jCollection="men" user={props.user} />
     </Layout>
   );
