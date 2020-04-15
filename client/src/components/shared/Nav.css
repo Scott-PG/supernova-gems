@@ -42,11 +42,13 @@ nav {
   max-width: 100%;
   align-items: center;
   font-size: 14px;
+  justify-content: space-between;
   display: flex;
+  margin: 0 50px;
 }
 
 .link {
-  flex: 1;
+  margin: 0 20px;
   color: white;
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
@@ -55,7 +57,6 @@ nav {
 }
 
 .welcome {
-  padding: 0 100px;
 }
 
 a {

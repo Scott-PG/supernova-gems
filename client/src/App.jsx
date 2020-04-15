@@ -13,6 +13,7 @@ import SignOut from "./components/SignOut";
 import MensProducts from "./components/products/MensProducts";
 import WomensProducts from "./components/products/WomensProducts";
 import EngagementProducts from "./components/products/EngagementProducts";
+import LeMaison from "./components/LeMaison";
 
 class App extends Component {
   constructor() {
@@ -84,6 +85,11 @@ class App extends Component {
             exact
             path="/engagement"
             render={() => <EngagementProducts user={user} />}
+          />
+          <Route
+            exact
+            path="/lemaison"
+            render={() => <LeMaison user={user} />}
           />
           <Route
             exact
