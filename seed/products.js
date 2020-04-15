@@ -8,13 +8,13 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 const main = async () => {
   let products = [
     {
-      name: 'Out-Of-This-World Heart',
+      name: 'Total Eclipse of the Heart',
       imgURL: 'https://i.imgur.com/e8x3pMI.jpg',
-      description: 'Facere aliquam ut necessitatibus et necessitatibus ducimus beatae accusamus aut.',
+      description: 'Nothing I can say...',
       price: '695.00',
       jType: 'necklace',
       jCollection: 'women',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -74,7 +74,7 @@ const main = async () => {
       price: '306.00',
       jType: 'earrings',
       jCollection: 'women',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -84,7 +84,7 @@ const main = async () => {
       price: '318.00',
       jType: 'earrings',
       jCollection: 'women',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -104,7 +104,7 @@ const main = async () => {
       price: '362.00',
       jType: 'cufflinks',
       jCollection: 'men',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -124,7 +124,7 @@ const main = async () => {
       price: '602.00',
       jType: 'bracelet',
       jCollection: 'women',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -144,7 +144,7 @@ const main = async () => {
       price: '890.00',
       jType: 'cufflinks',
       jCollection: 'men',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -174,7 +174,7 @@ const main = async () => {
       price: '194.00',
       jType: 'necklace',
       jCollection: 'women',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -184,7 +184,7 @@ const main = async () => {
       price: '611.00',
       jType: 'necklace',
       jCollection: 'women',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -204,7 +204,7 @@ const main = async () => {
       price: '705.00',
       jType: 'pendant',
       jCollection: 'men',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -224,7 +224,7 @@ const main = async () => {
       price: '570.00',
       jType: 'ring',
       jCollection: 'men',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -234,7 +234,7 @@ const main = async () => {
       price: '943.00',
       jType: 'ring',
       jCollection: 'engagement',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -244,7 +244,7 @@ const main = async () => {
       price: '746.00',
       jType: 'ring',
       jCollection: 'engagement',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -264,7 +264,7 @@ const main = async () => {
       price: '938.00',
       jType: 'ring',
       jCollection: 'engagement',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -274,7 +274,7 @@ const main = async () => {
       price: '168.00',
       jType: 'ring',
       jCollection: 'engagement',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -284,7 +284,7 @@ const main = async () => {
       price: '511.00',
       jType: 'ring',
       jCollection: 'engagement',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -294,7 +294,7 @@ const main = async () => {
       price: '182.00',
       jType: 'ring',
       jCollection: 'engagement',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -344,7 +344,7 @@ const main = async () => {
       price: '600.00',
       jType: 'bracelet',
       jCollection: 'men',
-      featured: false
+      featured: true
     }
     ,
     {
@@ -354,7 +354,7 @@ const main = async () => {
       price: '398.00',
       jType: 'ring',
       jCollection: 'men',
-      featured: false
+      featured: true
     }
   ]
 
