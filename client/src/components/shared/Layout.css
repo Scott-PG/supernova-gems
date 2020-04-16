@@ -1,5 +1,5 @@
 .layout {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -8,7 +8,7 @@
   flex: 2;
   background-color: black;
 
-  padding: 190px 0 129px;
+  padding: 190px 0 0;
 }
 
 @media (max-width: 500px) {
@@ -20,7 +20,7 @@
   .layout-children {
     width: 100%;
     /* flex: 4; */
-    padding: 0px;
+    padding: 190px 0 0;
     margin: 0px;
     display: flex;
     flex-direction: column;
