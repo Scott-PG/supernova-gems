@@ -6,6 +6,8 @@
 
 .layout-children {
   flex: 2;
+  background-color: black;
+
   /* padding: 100px; */
 }
 
