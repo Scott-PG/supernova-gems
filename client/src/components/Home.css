@@ -90,6 +90,10 @@
   /* text-transform: uppercase; */
 }
 
+.quarantine-img {
+  width: 100vw;
+}
+
 @media (max-width: 900px) {
   .blueSection-head {
     font-size: 45px;
