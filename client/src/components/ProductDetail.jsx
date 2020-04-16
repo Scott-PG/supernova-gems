@@ -33,11 +33,13 @@ class ProductDetail extends Component {
     return (
       <Layout user={this.props.user}>
         <div className="product-detail">
-          <img
-            className="product-detail-image"
-            src={product.imgURL}
-            alt={product.name}
-          />
+          <div className="product-detail-image-div">
+            <img
+              className="product-detail-image"
+              src={product.imgURL}
+              alt={product.name}
+            />
+          </div>
           <div className="detail-div">
             <div className="detail-name">{product.name}</div>
             <div className="detail-price">{`$${product.price}`}</div>
