@@ -65,26 +65,26 @@ class ProductEdit extends Component {
     return (
       <Layout user={this.props.user}>
         <div className="product-edit">
-          <div className="image-container">
+          <div className="edit-image-container">
             <img
               className="edit-product-image"
               src={product.imgURL}
               alt={product.name}
             />
-            <form onSubmit={this.handleSubmit}>
-              <input
-                className="edit-input-image-link"
-                placeholder="Image Link"
-                value={product.imgURL}
-                name="imgURL"
-                required
-                onChange={this.handleChange}
-              />
-            </form>
           </div>
+          <form onSubmit={this.handleSubmit} className="edit-form-image-link">
+            <input
+              className="edit-input-image-link"
+              placeholder="Image Link"
+              value={product.imgURL}
+              name="imgURL"
+              required
+              onChange={this.handleChange}
+            />
+          </form>
           <form className="edit-form" onSubmit={this.handleSubmit}>
             <input
-              className="input-name"
+              className="edit-input-name"
               placeholder="Name"
               value={product.name}
               name="name"
@@ -93,7 +93,7 @@ class ProductEdit extends Component {
               onChange={this.handleChange}
             />
             <input
-              className="input-price"
+              className="edit-input-price"
               placeholder="Price"
               value={product.price}
               name="price"
@@ -101,7 +101,7 @@ class ProductEdit extends Component {
               onChange={this.handleChange}
             />
             <textarea
-              className="textarea-description"
+              className="edit-textarea-description"
               rows={10}
               cols={78}
               placeholder="Description"
@@ -111,7 +111,7 @@ class ProductEdit extends Component {
               onChange={this.handleChange}
             />
             <select
-              className="jtype-dropdown"
+              className="edit-jtype-dropdown"
               name="jType"
               required
               onChange={this.handleChange}
@@ -127,7 +127,7 @@ class ProductEdit extends Component {
               <option value="bracelet">Bracelet</option>
             </select>
             <select
-              className="jcollection-dropdown"
+              className="edit-jcollection-dropdown"
               name="jCollection"
               required
               onChange={this.handleChange}
@@ -141,7 +141,7 @@ class ProductEdit extends Component {
               <option value="engagement">Engagement</option>
             </select>
             <select
-              className="featured-dropdown"
+              className="edit-featured-dropdown"
               name="featured"
               required
               onChange={this.handleFeaturedChange}
@@ -150,7 +150,7 @@ class ProductEdit extends Component {
               <option value="false">Not Featured</option>
               <option value="true">Featured</option>
             </select>
-            <button type="submit" className="save-button">
+            <button type="submit" className="edit-save-button">
               Save
             </button>
           </form>
