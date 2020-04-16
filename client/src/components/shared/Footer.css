@@ -1,14 +1,11 @@
-footer {
-  padding: 40px;
-}
-
 .footer {
+  padding: 40px;
   background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
   height: 50px;
-  font-family: brandon-grotesque, sans-serif;
+
   text-transform: uppercase;
   font-weight: 800;
   font-size: 14px;
@@ -25,3 +22,44 @@ footer {
 .footer img {
   padding: 15px;
 }
+
+@media (max-width: 400px) {
+  .footer a {
+    padding: 8px;
+  }
+  .footer {
+    font-size: 10px;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .footerImglinks {
+    margin-left: -115px;
+    padding-top: 20px;
+  }
+
+  .privacy {
+    width: 80px;
+  }
+
+  .footerlinks {
+    width: 120px;
+  }
+}
+
+/* <footer className="footer">
+<div className="privacy">Privacy</div>
+
+<div className="footerlinks">
+  <a href="#">Shop</a>
+  <a href="#">Blog</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+
+<div className="footerImglinks">
+  <img src={IGlogo} alt="IG-Logo" />
+  <img src={Twitterlogo} alt="Twitter-Logo" />
+  <img src={Facebooklogo} alt="Facebook-Logo" />
+</div>
+</footer> */

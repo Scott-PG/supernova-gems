@@ -19,11 +19,14 @@ const Home = (props) => {
         <div className="textDivider">Ultimate Elegance</div>
         <span className="textDividertag">Best Sellers</span>
       </div>
+
       <Products jCollection="women" featured={true} />
+
       <div className="featuredDivider">
         <div className="featuredDividerdiv">Quarantine... Where she going?</div>
         <span className="featuredDividertag">Instagram!</span>
       </div>
+
       <img className="quarantine-img" src={featuredDividerImg} />
       <div className="blueSection"></div>
       <div className="quarantineSection"></div>
