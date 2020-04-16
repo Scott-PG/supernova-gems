@@ -17,6 +17,14 @@
 
 .product-image {
   width: 300px;
+  /* height: 300px;
+  object-fit: cover; */
+}
+
+.product-image-container {
+  background-color: white;
+  width: 300px;
+  height: 300px;
 }
 
 .product-name {
@@ -29,14 +37,39 @@
   padding: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .product {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
   }
   .product-image {
     width: 180px;
-    margin: 15px;
+  }
+
+  .product:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
+
+  .product-image {
+    width: 300px;
+  }
+
+  .product-image-container {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+  }
+
+  .product-name {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .price {
+    font-size: 12px;
     padding: 10px;
   }
 }

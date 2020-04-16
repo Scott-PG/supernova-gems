@@ -46,8 +46,8 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="logo" to="/">
-          <img to="/" src={logo} />
+        <NavLink className="nav-navlink" to="/">
+          <img className="logo-container" src={logo} />
         </NavLink>
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.email}</div>}

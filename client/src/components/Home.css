@@ -1,9 +1,3 @@
-@media (max-width: 500px) {
-  .home {
-    padding: 100px 40px;
-  }
-}
-
 .gridHeadingDivider,
 .featuredDivider {
   background-color: black;
@@ -43,4 +37,58 @@
 
 .featuredDividertag {
   margin-left: 300px;
+}
+
+.blueSection {
+  background-color: #92dce5;
+  height: 650px;
+}
+
+.quarantineSection {
+  background-color: white;
+  height: 350px;
+  width: 950px;
+  margin: auto;
+  margin-top: -150px;
+}
+
+/* <div className="gridHeadingDivider">
+<div className="textDivider">Ultimate Elegance</div>
+<span className="textDividertag">Best Sellers</span>
+</div> */
+
+@media (max-width: 400px) {
+  .gridHeadingDivider,
+  .featuredDivider {
+    background-color: black;
+    height: 40px;
+    display: block;
+  }
+
+  .textDivider,
+  .featuredDividerdiv {
+    font-family: kazimir, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+  }
+
+  .textDividertag,
+  .featuredDividertag {
+    visibility: hidden;
+  }
+  .quarantine-img {
+    width: 100vw;
+    padding-top: 250px;
+  }
+
+  /* .featuredDivider {
+    margin-top: 200px;
+  } */
+
+  .featuredDividerdiv {
+    font-size: 20px;
+  }
 }
