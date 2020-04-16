@@ -11,7 +11,7 @@
   padding: 190px 0 129px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .layout {
     height: 100%;
     display: flex;
