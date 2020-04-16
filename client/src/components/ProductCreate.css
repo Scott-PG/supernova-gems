@@ -111,9 +111,8 @@ select:focus {
 
 @media (max-width: 400px) {
   .create-form {
-    padding-top: 190px;
     grid-template-columns: 3px 1fr 3px;
-    grid-template-rows: 90px 30px 270px 24px 24px 24px 24px 40px 60px;
+    grid-template-rows: 90px 30px 270px 24px 24px 24px 24px 50px 30px;
     grid-template-areas:
       ". n ."
       ". p ."
