@@ -140,7 +140,8 @@
 
 @media (max-width: 400px) {
   .product-edit {
-    grid-template-columns: 1fr;
+    max-width: 100%;
+    grid-template-columns: 100%;
     grid-template-rows: 30px auto auto 20px 494px 60px;
     grid-template-areas:
       "."
@@ -154,10 +155,11 @@
     width: 100%;
   }
   .edit-form {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
   .edit-image-container {
     width: 100vw;
-    height: 100vw;
+    height: auto;
+    background-color: none;
   }
 }
