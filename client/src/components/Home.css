@@ -44,12 +44,48 @@
   height: 650px;
 }
 
+.blueSection-head {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 450;
+  font-style: bold;
+  font-size: 65px;
+  text-align: center;
+  /* width: 75%; */
+  margin: auto;
+  padding-top: 60px;
+  text-transform: uppercase;
+}
+
+.blueSection-text {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 450;
+  /* font-style: italic; */
+  font-size: 40px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 30px;
+  text-transform: none;
+}
+
 .quarantineSection {
   background-color: white;
   height: 350px;
   width: 950px;
   margin: auto;
   margin-top: -150px;
+}
+
+.quarantineSection-text {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 450;
+  font-style: italic;
+  font-size: 55px;
+  text-align: center;
+  padding-top: 80px;
+  font-weight: 800;
+  padding: 80px 20px;
+  /* text-transform: uppercase; */
 }
 
 /* <div className="gridHeadingDivider">

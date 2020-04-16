@@ -28,8 +28,23 @@ const Home = (props) => {
       </div>
 
       <img className="quarantine-img" src={featuredDividerImg} />
-      <div className="blueSection"></div>
-      <div className="quarantineSection"></div>
+      <div className="blueSection">
+        <div className="blueSection-head">
+          GLOW UP DURING QUARANTINE
+          <div />
+          <div className="blueSection-text">
+            Want to glow-up? You’ve come to the right place. Even the most
+            ordinary morning can be elevated with the addition of a statement
+            jewelry. Start with these rings, then add delicate diamond bands for
+            an unexpected contrast. Now, that’s what we call staying in.
+          </div>
+        </div>
+      </div>
+      <div className="quarantineSection">
+        <div className="quarantineSection-text">
+          Quarantine Engagement Rings that Prove That Love Always Wins!
+        </div>
+      </div>
       <Products jCollection="engagement" featured={true} />
     </Layout>
   );
