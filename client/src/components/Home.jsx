@@ -20,7 +20,9 @@ const Home = (props) => {
         <span className="textDividertag">Best Sellers</span>
       </div>
 
-      <Products jCollection="women" featured={true} />
+      <div className="featured-products-grid">
+        <Products jCollection="women" featured={true} />
+      </div>
 
       <div className="featuredDivider">
         <div className="featuredDividerdiv">Quarantine... Where she going?</div>
@@ -48,7 +50,10 @@ const Home = (props) => {
           Love Always Wins!
         </div>
       </div>
-      <Products jCollection="engagement" featured={true} />
+
+      <div className="engagement-section">
+        <Products jCollection="engagement" featured={true} />
+      </div>
     </Layout>
   );
 };
