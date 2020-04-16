@@ -11,10 +11,10 @@ const WomensProducts = (props) => {
         heroImg="https://i.imgur.com/WefJFor.jpg"
         heroTitle="Women"
       />
-
       <Products jCollection="women" user={props.user} />
     </Layout>
   );
 };
 
 export default WomensProducts;
+
