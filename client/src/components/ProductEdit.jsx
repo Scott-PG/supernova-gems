@@ -40,9 +40,9 @@ class ProductEdit extends Component {
   handleFeaturedChange = (event) => {
     const value = event.target.value;
     let pulledState = { ...this.state };
-    if (value == "true") {
+    if (value === "true") {
       pulledState.product.featured = true;
-    } else if (value == "false") {
+    } else if (value === "false") {
       pulledState.product.featured = false;
     }
     this.setState({ product: pulledState.product });
