@@ -60,9 +60,9 @@
   font-family: brandon-grotesque, sans-serif;
   font-weight: 450;
   /* font-style: italic; */
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
-  width: 90%;
+  width: 95%;
   margin: auto;
   padding-top: 25px;
   text-transform: none;
@@ -96,7 +96,7 @@
   }
 
   .blueSection-text {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
