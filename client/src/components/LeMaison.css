@@ -1,9 +1,10 @@
 .lemaison {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 40px;
+  padding: 0;
+  margin-top: 200px;
 }
 
 .about-div img {
@@ -17,7 +18,22 @@
   margin: 10px;
   box-shadow: 0px 0px 3px 1px #cecece;
   transition: 250ms all;
-  padding: 0 0 20px;
+  padding: 0;
   margin-bottom: 60px;
   max-width: 500px;
+  text-align: center;
+}
+.lemaison-caption h2, p {
+  color: white;
+  margin: 5px 0px 10px;
+}
+
+@media (min-width: 500px) {
+  .lemaison {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
 }

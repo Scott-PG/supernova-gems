@@ -33,29 +33,31 @@ class ProductDetail extends Component {
     return (
       <Layout user={this.props.user}>
         <div className="product-detail">
-          <img
-            className="product-detail-image"
-            src={product.imgURL}
-            alt={product.name}
-          />
-          <div className="detail">
-            <div className="name">{product.name}</div>
-            <div className="price">{`$${product.price}`}</div>
-            <div className="description">{product.description}</div>
-            <div className="description">
+          <div className="product-detail-image-div">
+            <img
+              className="product-detail-image"
+              src={product.imgURL}
+              alt={product.name}
+            />
+          </div>
+          <div className="detail-div">
+            <div className="detail-name">{product.name}</div>
+            <div className="detail-price">{`$${product.price}`}</div>
+            <div className="detail-description">{product.description}</div>
+            <div className="detail-type-collection">
               {product.jType} {product.jCollection}
             </div>
-            <div className="button-container">
-              <button className="edit-button">
+            <div className="detail-button-container">
+              <button className="detail-edit-button">
                 <Link
-                  className="edit-link"
+                  className="detail-edit-link"
                   to={`/products/${product._id}/edit`}
                 >
                   Edit
                 </Link>
               </button>
               <button
-                className="delete-button"
+                className="detail-delete-button"
                 onClick={() => {
                   deleteProduct(product._id);
                   this.setState({ deleted: true });

@@ -34,9 +34,9 @@ class ProductCreate extends Component {
   handleFeaturedChange = (event) => {
     const value = event.target.value;
     let pulledState = { ...this.state };
-    if (value == "true") {
+    if (value === "true") {
       pulledState.product.featured = true;
-    } else if (value == "false") {
+    } else if (value === "false") {
       pulledState.product.featured = false;
     }
     this.setState({ product: pulledState.product });
@@ -58,7 +58,7 @@ class ProductCreate extends Component {
       <Layout user={this.props.user}>
         <form className="create-form" onSubmit={this.handleSubmit}>
           <input
-            className="input-name"
+            className="create-input-name"
             placeholder="Name"
             value={product.name}
             name="name"
@@ -67,7 +67,7 @@ class ProductCreate extends Component {
             onChange={this.handleChange}
           />
           <input
-            className="input-price"
+            className="create-input-price"
             placeholder="Price"
             value={product.price}
             name="price"
@@ -75,7 +75,7 @@ class ProductCreate extends Component {
             onChange={this.handleChange}
           />
           <textarea
-            className="textarea-description"
+            className="create-textarea-description"
             rows={10}
             placeholder="Description"
             value={product.description}
@@ -84,7 +84,7 @@ class ProductCreate extends Component {
             onChange={this.handleChange}
           />
           <input
-            className="input-image-link"
+            className="create-input-image-link"
             placeholder="Image Link"
             value={product.imgURL}
             name="imgURL"
@@ -92,7 +92,7 @@ class ProductCreate extends Component {
             onChange={this.handleChange}
           />
           <select
-            className="jtype-dropdown"
+            className="create-jtype-dropdown"
             name="jType"
             required
             onChange={this.handleChange}
@@ -108,7 +108,7 @@ class ProductCreate extends Component {
             <option value="bracelet">Bracelet</option>
           </select>
           <select
-            className="jcollection-dropdown"
+            className="create-jcollection-dropdown"
             name="jCollection"
             required
             onChange={this.handleChange}
@@ -122,7 +122,7 @@ class ProductCreate extends Component {
             <option value="engagement">Engagement</option>
           </select>
           <select
-            className="featured-dropdown"
+            className="create-featured-dropdown"
             name="featured"
             required
             onChange={this.handleFeaturedChange}
@@ -131,7 +131,7 @@ class ProductCreate extends Component {
             <option value="false">Not Featured</option>
             <option value="true">Featured</option>
           </select>
-          <button type="submit" className="submit-button">
+          <button type="submit" className="create-submit-button">
             Submit
           </button>
         </form>

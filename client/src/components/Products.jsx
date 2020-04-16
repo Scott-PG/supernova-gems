@@ -3,7 +3,6 @@ import "./Products.css";
 import Product from "./Product";
 import Search from "./Search";
 import { AZ, ZA, lowestFirst, highestFirst } from "./Sort";
-import Layout from "./shared/Layout";
 import { getProducts } from "../services/product";
 
 class Products extends Component {
@@ -23,7 +22,7 @@ class Products extends Component {
     products = products.filter((element) => {
       return element.jCollection === this.props.jCollection;
     });
-    if (this.props.featured != undefined) {
+    if (this.props.featured !== undefined) {
       this.setState({ featured: this.props.featured });
       if (this.state.featured === true) {
         products = products.filter((element) => {

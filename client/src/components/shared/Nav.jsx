@@ -5,10 +5,10 @@ import logo from "../../Images/Supernova-Gems-black-logo.png";
 
 const authenticatedOptions = (
   <>
-    <NavLink className="link" to="/add-product">
+    <NavLink className="link navlink5" to="/add-product">
       Add Product
     </NavLink>
-    <NavLink className="link" to="/sign-out">
+    <NavLink className="link navlink6" to="/sign-out">
       Sign Out
     </NavLink>
   </>
@@ -16,10 +16,10 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <>
-    <NavLink className="link" to="/sign-up">
+    <NavLink className="link navlink5" to="/sign-up">
       Sign Up
     </NavLink>
-    <NavLink className="link" to="/sign-in">
+    <NavLink className="link navlink6" to="/sign-in">
       Sign In
     </NavLink>
   </>
@@ -27,16 +27,16 @@ const unauthenticatedOptions = (
 
 const alwaysOptions = (
   <>
-    <NavLink className="link" to="/women">
+    <NavLink className="link navlink1" to="/women">
       Women
     </NavLink>
-    <NavLink className="link" to="/engagement">
+    <NavLink className="link navlink2" to="/engagement">
       Engagement
     </NavLink>
-    <NavLink className="link" to="/men">
+    <NavLink className="link navlink3" to="/men">
       Men
     </NavLink>
-    <NavLink className="link" to="/lemaison">
+    <NavLink className="link navlink4" to="/lemaison">
       Le Maison
     </NavLink>
   </>
@@ -46,11 +46,13 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="logo" to="/">
-          <img to="/" src={logo} />
+        <NavLink className="nav-navlink" to="/">
+          <img className="logo-container" src={logo} />
         </NavLink>
         <div className="links">
-          {user && <div className="link welcome">Welcome, {user.email}</div>}
+          {user && (
+            <div className="link welcome navlink0">Welcome, {user.email}</div>
+          )}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
