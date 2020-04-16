@@ -3,3 +3,44 @@
     padding: 100px 40px;
   }
 }
+
+.gridHeadingDivider,
+.featuredDivider {
+  background-color: black;
+  margin-top: -250px;
+  padding: 50px;
+  display: block;
+}
+
+.textDivider,
+.featuredDividerdiv {
+  font-family: kazimir, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 96px;
+  text-align: center;
+  color: white;
+}
+
+.textDividertag,
+.featuredDividertag {
+  /* border: 5px solid red; */
+  background-color: #92dce5;
+  padding: 0px 65px 0 20px;
+  margin-left: 740px;
+  font-family: kazimir, sans-serif;
+  font-weight: 450;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  max-width: 380px;
+}
+
+.featuredDividerdiv {
+  padding-top: 250px;
+  font-size: 60px;
+}
+
+.featuredDividertag {
+  margin-left: 300px;
+}
