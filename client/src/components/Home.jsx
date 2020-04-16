@@ -24,7 +24,10 @@ const Home = (props) => {
         <div className="featuredDividerdiv">Quarantine... Where she going?</div>
         <span className="featuredDividertag">Instagram!</span>
       </div>
-      <img src={featuredDividerImg} />
+      <img className="quarantine-img" src={featuredDividerImg} />
+      <div className="blueSection"></div>
+      <div className="quarantineSection"></div>
+      <Products jCollection="engagement" featured={true} />
     </Layout>
   );
 };
