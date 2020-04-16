@@ -61,8 +61,11 @@
   .gridHeadingDivider,
   .featuredDivider {
     background-color: black;
-    height: 40px;
+    height: 0px;
     display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .textDivider,
@@ -75,20 +78,40 @@
     color: white;
   }
 
-  .textDividertag,
-  .featuredDividertag {
+  .textDividertag {
     visibility: hidden;
   }
   .quarantine-img {
     width: 100vw;
-    padding-top: 250px;
+    padding-top: 50px;
   }
 
-  /* .featuredDivider {
-    margin-top: 200px;
-  } */
+  .featuredDivider {
+    background-color: black;
+    margin-top: 0;
+  }
 
   .featuredDividerdiv {
     font-size: 20px;
+    margin-top: -255px;
+    width: 350px;
+    padding-left: 30px;
+  }
+  .featuredDividertag {
+    background-color: #92dce5;
+    font-family: kazimir, sans-serif;
+    font-weight: 450;
+    font-style: italic;
+    font-size: 20px;
+    padding: 0 10px;
+    margin-left: 100px;
+  }
+
+  /* .blueSection {
+  } */
+
+  .quarantineSection {
+    margin-top: -550px;
+    height: 0px;
   }
 }

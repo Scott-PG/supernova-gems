@@ -5,7 +5,7 @@ import Twitterlogo from "../../Images/Twitterlogo.png";
 import Facebooklogo from "../../Images/Facebooklogo.png";
 
 const Footer = () => (
-  <footer className="footer">
+  <div className="footer">
     <div className="privacy">Privacy</div>
 
     <div className="footerlinks">
@@ -20,7 +20,7 @@ const Footer = () => (
       <img src={Twitterlogo} alt="Twitter-Logo" />
       <img src={Facebooklogo} alt="Facebook-Logo" />
     </div>
-  </footer>
+  </div>
 );
 
 export default Footer;
