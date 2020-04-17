@@ -16,6 +16,7 @@ class ProductDetail extends Component {
         jCollection: "",
       },
       deleted: false,
+      userPermissions: "none",
     };
   }
 
@@ -23,13 +24,22 @@ class ProductDetail extends Component {
     let { id } = this.props.match.params;
     const product = await getProduct(id);
     this.setState({ product });
+    if (this.props.user) {
+      this.setState(() => ({
+        userPermissions: this.props.user.userPermissions,
+      }));
+    }
   }
 
   render() {
+    let cName = "noButtons";
     const { product, deleted } = this.state;
     if (deleted) {
       return <Redirect to={`/${this.state.product.jCollection}`} />;
     }
+    this.state.userPermissions === "admin"
+      ? (cName = "detail-button-container")
+      : (cName = "detail-button-container-hide");
     return (
       <Layout user={this.props.user}>
         <div className="product-detail">
@@ -45,9 +55,10 @@ class ProductDetail extends Component {
             <div className="detail-price">{`$${product.price}`}</div>
             <div className="detail-description">{product.description}</div>
             <div className="detail-type-collection">
-              {product.jType} {product.jCollection}
+              {`${product.jType}, ${product.jCollection}`}
             </div>
-            <div className="detail-button-container">
+
+            <div className={cName}>
               <button className="detail-edit-button">
                 <Link
                   className="detail-edit-link"

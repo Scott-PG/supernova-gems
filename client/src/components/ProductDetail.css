@@ -18,7 +18,8 @@
 
 .detail-name,
 .detail-price,
-.detail-description {
+.detail-description,
+.detail-type-collection {
   color: white;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .detail-description {
-  padding: 10px;
+  padding: 0;
   letter-spacing: 0.9px;
 }
 
@@ -50,6 +51,9 @@
 .detail-button-container {
   display: flex;
   justify-content: space-between;
+}
+.detail-button-container-hide {
+  display: none;
 }
 
 .detail-edit-button,
