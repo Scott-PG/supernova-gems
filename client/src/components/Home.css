@@ -11,32 +11,26 @@
   font-family: kazimir, sans-serif;
   font-weight: 800;
   font-style: italic;
-  font-size: 96px;
+  font-size: 8vw;
   text-align: center;
   color: white;
 }
 
 .textDividertag,
 .featuredDividertag {
-  /* border: 5px solid red; */
   background-color: #92dce5;
   padding: 0px 65px 0 20px;
-  margin-left: 740px;
+  margin-left: 300px;
   font-family: kazimir, sans-serif;
   font-weight: 450;
   font-style: italic;
-  font-size: 40px;
+  font-size: 3vw;
   text-align: center;
-  max-width: 380px;
 }
 
 .featuredDividerdiv {
-  padding-top: 250px;
-  font-size: 60px;
-}
-
-.featuredDividertag {
-  margin-left: 300px;
+  font-size: 5vw;
+  padding-top: 200px;
 }
 
 .blueSection {
@@ -109,7 +103,7 @@
 }
 
 @media (max-width: 400px) {
-  .gridHeadingDivider,
+  /* .gridHeadingDivider,
   .featuredDivider {
     background-color: black;
     height: 0px;
@@ -117,9 +111,9 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-  }
+  } */
 
-  .textDivider,
+  /* .textDivider,
   .featuredDividerdiv {
     font-family: kazimir, sans-serif;
     font-weight: 800;
@@ -127,7 +121,7 @@
     font-size: 32px;
     text-align: center;
     color: white;
-  }
+  } */
 
   .textDividertag {
     visibility: hidden;
