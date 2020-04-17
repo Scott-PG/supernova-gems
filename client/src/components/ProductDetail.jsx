@@ -39,7 +39,7 @@ class ProductDetail extends Component {
     }
     this.state.userPermissions === "admin"
       ? (cName = "detail-button-container")
-      : (cName = "noButtons");
+      : (cName = "detail-button-container-hide");
     return (
       <Layout user={this.props.user}>
         <div className="product-detail">
