@@ -48,7 +48,7 @@
   font-family: brandon-grotesque, sans-serif;
   font-weight: 450;
   font-style: bold;
-  font-size: 65px;
+  font-size: 5vw;
   text-align: center;
   /* width: 75%; */
   margin: auto;
@@ -60,32 +60,36 @@
   font-family: brandon-grotesque, sans-serif;
   font-weight: 450;
   /* font-style: italic; */
-  font-size: 24px;
+  font-size: 3.5vw;
   text-align: center;
   width: 95%;
   margin: auto;
-  padding-top: 25px;
+  padding-top: 75px;
   text-transform: none;
   line-height: 65px;
 }
 
-.quarantineSection {
+/* .quarantineSection {
   background-color: white;
   height: 350px;
   width: 950px;
   margin: auto;
   margin-top: -150px;
-}
+} */
 
 .quarantineSection-text {
   font-family: brandon-grotesque, sans-serif;
   font-weight: 450;
   font-style: italic;
-  font-size: 55px;
+  font-size: 4vw;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 40px;
   font-weight: 800;
-  padding: 40px 20px;
+  background-color: white;
+  height: 25vw;
+  width: 70vw;
+  margin: auto;
+  /* padding: 40px 20px; */
   line-height: 80px;
   /* text-transform: uppercase; */
 }
