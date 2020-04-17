@@ -48,14 +48,12 @@
   width: 100%;
 }
 
-/* .detail-button-container { */
-.showButtons {
+.detail-button-container {
   display: flex;
   justify-content: space-between;
-
 }
-.noButtons {
-display: none;
+.detail-button-container-hide {
+  display: none;
 }
 
 .detail-edit-button,
