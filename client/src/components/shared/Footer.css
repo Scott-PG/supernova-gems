@@ -13,23 +13,20 @@
 }
 
 .privacy {
-  width: 80px;
   align-self: left;
-  padding: 5px 25px;
+  padding: 5px 35px;
   align-self: center;
 }
 .footerlinks {
-  width: 130px;
   align-self: center;
+  justify-self: center;
 }
 .footerlinks a {
-  padding: 5px 10px;
   color: white;
 }
 .footerImglinks {
-  width: 120px;
   justify-self: end;
-  padding-right: 25px;
+  padding-right: 40px;
   align-self: center;
 }
 
