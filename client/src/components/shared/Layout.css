@@ -1,14 +1,15 @@
 .layout {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
+  background-color: black;
 }
 
 .layout-children {
   flex: 2;
   background-color: black;
-
+  overflow-x: hidden;
+  overflow-y: scroll;
   padding: 190px 0 0;
 }
 
