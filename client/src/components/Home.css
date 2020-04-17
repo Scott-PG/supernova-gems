@@ -2,8 +2,9 @@
 .featuredDivider {
   background-color: black;
   margin-top: -250px;
-  padding: 50px;
+  /* padding: 50px; */
   display: block;
+  padding-bottom: 20px;
 }
 
 .textDivider,
@@ -11,32 +12,26 @@
   font-family: kazimir, sans-serif;
   font-weight: 800;
   font-style: italic;
-  font-size: 96px;
+  font-size: 8vw;
   text-align: center;
   color: white;
+  padding-top: 390px;
 }
 
 .textDividertag,
 .featuredDividertag {
-  /* border: 5px solid red; */
   background-color: #92dce5;
   padding: 0px 65px 0 20px;
-  margin-left: 740px;
+  margin-left: 300px;
   font-family: kazimir, sans-serif;
   font-weight: 450;
   font-style: italic;
-  font-size: 40px;
+  font-size: 3vw;
   text-align: center;
-  max-width: 380px;
 }
 
 .featuredDividerdiv {
-  padding-top: 250px;
-  font-size: 60px;
-}
-
-.featuredDividertag {
-  margin-left: 300px;
+  font-size: 5vw;
 }
 
 .blueSection {
@@ -83,7 +78,7 @@
   font-style: italic;
   font-size: 4vw;
   text-align: center;
-  padding-top: 40px;
+  padding: 40px 0 50px;
   font-weight: 800;
   background-color: white;
   height: 25vw;
@@ -109,24 +104,16 @@
 }
 
 @media (max-width: 400px) {
-  .gridHeadingDivider,
-  .featuredDivider {
+  .gridHeadingDivider {
     background-color: black;
-    height: 0px;
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    margin-top: 20px;
+    padding: 0;
+    height: 40px;
   }
 
   .textDivider,
   .featuredDividerdiv {
-    font-family: kazimir, sans-serif;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 32px;
-    text-align: center;
-    color: white;
+    padding: 0;
   }
 
   .textDividertag {
@@ -134,17 +121,16 @@
   }
   .quarantine-img {
     width: 100vw;
-    padding-top: 50px;
+    padding-top: 5px;
   }
 
   .featuredDivider {
     background-color: black;
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .featuredDividerdiv {
     font-size: 20px;
-    margin-top: -255px;
     width: 350px;
     padding-left: 30px;
   }
