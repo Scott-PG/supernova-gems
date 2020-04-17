@@ -4,10 +4,6 @@
   flex-direction: column;
 }
 
-.layout:-webkit-any() {
-  min-height: -webkit-fill-available;
-}
-
 .layout-children {
   flex: 2;
   background-color: black;
