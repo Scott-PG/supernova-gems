@@ -45,7 +45,7 @@ class ProductDetail extends Component {
             <div className="detail-price">{`$${product.price}`}</div>
             <div className="detail-description">{product.description}</div>
             <div className="detail-type-collection">
-              {product.jType} {product.jCollection}
+              {`${product.jType}, ${product.jCollection}`}
             </div>
             <div className="detail-button-container">
               <button className="detail-edit-button">
