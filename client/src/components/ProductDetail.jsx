@@ -38,8 +38,8 @@ class ProductDetail extends Component {
       return <Redirect to={`/${this.state.product.jCollection}`} />;
     }
     this.state.userPermissions === "admin"
-      ? (cName = "showButtons")
-      : (cName = "noButtons");
+      ? (cName = "detail-button-container")
+      : (cName = "detail-button-container-hide");
     return (
       <Layout user={this.props.user}>
         <div className="product-detail">
@@ -58,7 +58,6 @@ class ProductDetail extends Component {
               {`${product.jType}, ${product.jCollection}`}
             </div>
 
-            {/* <div className="detail-button-container"> */}
             <div className={cName}>
               <button className="detail-edit-button">
                 <Link
