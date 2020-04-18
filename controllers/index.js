@@ -17,7 +17,6 @@ const signUp = async (req, res) => {
       username,
       email,
       password_digest,
-      userPermissions,
     });
 
     await user.save();

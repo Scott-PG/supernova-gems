@@ -6,7 +6,7 @@ import ProductCreate from "./components/ProductCreate";
 import ProductEdit from "./components/ProductEdit";
 import ProductDetail from "./components/ProductDetail";
 import { Route, Switch, Redirect } from "react-router-dom";
-import { verifyUser } from "./services/user";
+import { verifyUser, verifyAdmin } from "./services/user";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import SignOut from "./components/SignOut";
@@ -25,6 +25,7 @@ class App extends Component {
 
   async componentDidMount() {
     const user = await verifyUser();
+
     if (user) {
       this.setState({ user: user.user });
     }
