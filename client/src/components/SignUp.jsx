@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./SignUp.css";
+import "./SignUp2.css";
+import signup from "../Images/signup.png";
 import { signUp, signIn } from "../services/user";
 
 class SignUp extends Component {
@@ -54,7 +55,11 @@ class SignUp extends Component {
         </button>
       );
     } else {
-      return <button type="submit">Sign Up</button>;
+      return (
+        <button className="button" type="submit">
+          Sign Up
+        </button>
+      );
     }
   };
 
@@ -63,45 +68,49 @@ class SignUp extends Component {
 
     return (
       <div className="form-container">
-        <h3>Sign Up</h3>
+        <img className="form-img" src={signup} />
+
+        {/* <h3>Sign Up</h3> */}
         <form onSubmit={this.onSignUp}>
-          <label>Username</label>
-          <input
-            required
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Enter username"
-            onChange={this.handleChange}
-          />
-          <label>Email address</label>
-          <input
-            required
-            type="email"
-            name="email"
-            value={email}
-            placeholder="Enter email"
-            onChange={this.handleChange}
-          />
-          <label>Password</label>
-          <input
-            required
-            name="password"
-            value={password}
-            type="password"
-            placeholder="Password"
-            onChange={this.handleChange}
-          />
-          <label>Password Confirmation</label>
-          <input
-            required
-            name="passwordConfirmation"
-            value={passwordConfirmation}
-            type="password"
-            placeholder="Confirm Password"
-            onChange={this.handleChange}
-          />
-          {this.renderError()}
+          <div className="form-user-info">
+            <label>Username</label>
+            <input
+              required
+              type="text"
+              name="username"
+              value={username}
+              placeholder="Enter username"
+              onChange={this.handleChange}
+            />
+            <label>Email address</label>
+            <input
+              required
+              type="email"
+              name="email"
+              value={email}
+              placeholder="Enter email"
+              onChange={this.handleChange}
+            />
+            <label>Password</label>
+            <input
+              required
+              name="password"
+              value={password}
+              type="password"
+              placeholder="Password"
+              onChange={this.handleChange}
+            />
+            <label>Password Confirmation</label>
+            <input
+              required
+              name="passwordConfirmation"
+              value={passwordConfirmation}
+              type="password"
+              placeholder="Confirm Password"
+              onChange={this.handleChange}
+            />
+            {this.renderError()}
+          </div>
         </form>
       </div>
     );
