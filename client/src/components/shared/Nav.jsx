@@ -54,7 +54,6 @@ const alwaysOptions = (
 );
 
 const Nav = ({ user }) => {
-  // debugger;
   return (
     <nav>
       <div className="nav">
