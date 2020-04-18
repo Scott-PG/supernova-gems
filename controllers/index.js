@@ -13,6 +13,13 @@ const signUp = async (req, res) => {
   try {
     const { username, email, password, userPermissions } = req.body;
     const password_digest = await bcrypt.hash(password, SALT_ROUNDS);
+
+    // do not create user if already exist in database
+    if (await User.findOne({ username: username })) {
+      console.log("User already existed in database");
+      res.status(401).send("User already existed");
+    }
+
     const user = await new User({
       username,
       email,
