@@ -12,7 +12,7 @@ class SignUp extends Component {
       email: "",
       password: "",
       passwordConfirmation: "",
-      userPermissions: "admin",
+      userPermissions: "user",
       isError: false,
       errorMsg: "",
     };
