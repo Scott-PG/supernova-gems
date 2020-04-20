@@ -1,6 +1,10 @@
 import axios from "axios";
 
-const jsonWebToken = localStorage.getItem("token") || null;
+const getToken = () => {
+  return new Promise((resolve) => {
+    resolve(`Bearer ${localStorage.getItem("token") || null}`);
+  });
+};
 
 let apiUrl;
 
@@ -17,10 +21,17 @@ if (window.location.hostname === "localhost") {
 
 const api = axios.create({
   baseURL: apiUrl,
-  headers: {
-    Authorization: `Bearer ${jsonWebToken}`,
-    "Access-Control-Allow-Origin": "*",
-  },
 });
+
+api.interceptors.request.use(
+  async function (options) {
+    options.headers["Authorization"] = await getToken();
+    return options;
+  },
+  function (error) {
+    console.log("Request error: ", error);
+    return Promise.reject(error);
+  }
+);
 
 export default api;
