@@ -3,11 +3,22 @@ import "./Nav.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../Images/Supernova-Gems-black-logo.png";
 
-const authenticatedOptions = (
+const authenticatedAdminOptions = (
   <>
     <NavLink className="link navlink5" to="/add-product">
       Add Product
     </NavLink>
+    <NavLink className="link navlink6" to="/sign-out">
+      Sign Out
+    </NavLink>
+  </>
+);
+
+const authenticatedOptions = (
+  <>
+    {/* <NavLink className="link navlink5" to="/add-product">
+      Add Product
+    </NavLink> */}
     <NavLink className="link navlink6" to="/sign-out">
       Sign Out
     </NavLink>
@@ -54,7 +65,11 @@ const Nav = ({ user }) => {
             <div className="link welcome navlink0">Welcome, {user.email}</div>
           )}
           {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
+          {user && user.userPermissions === "admin"
+            ? authenticatedAdminOptions
+            : user
+            ? authenticatedOptions
+            : unauthenticatedOptions}
         </div>
       </div>
     </nav>
