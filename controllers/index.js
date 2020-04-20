@@ -26,6 +26,7 @@ const signUp = async (req, res) => {
       id: user._id,
       username: user.username,
       email: user.email,
+      userPermissions: user.userPermissions,
     };
 
     const token = jwt.sign(payload, TOKEN_KEY);
@@ -47,6 +48,7 @@ const signIn = async (req, res) => {
         id: user._id,
         username: user.username,
         email: user.email,
+        userPermissions: user.userPermissions,
       };
 
       const token = jwt.sign(payload, TOKEN_KEY);
